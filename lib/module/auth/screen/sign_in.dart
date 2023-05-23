@@ -1,3 +1,4 @@
+import 'package:busnew_app/module/auth/screen/sign_up.dart';
 import 'package:flutter/material.dart';
 
 import '../../booking/screen/bus_search.dart';
@@ -16,8 +17,12 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('hello'),
-        centerTitle: ture,
+        leading: Container(
+            height: 50,
+            child: Image(image: AssetImage('assets/image/menu.png'),)),
+        title: Container(
+            height: 50,
+            child: Image(image: AssetImage('assets/image/logo.png'),)),
         elevation: 15.0,
         backgroundColor: Colors.white,
       ),
@@ -72,7 +77,7 @@ class _SignInState extends State<SignIn> {
                   Navigator.push(context, BusSearch.route())
                 },
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 60),
+                  padding:  const EdgeInsets.symmetric(vertical: 8, horizontal: 120),
                   child: Text("Sign In",style: TextStyle(color: Colors.white,fontSize: 18),),
                 ),
                 style: TextButton.styleFrom(
@@ -87,7 +92,11 @@ class _SignInState extends State<SignIn> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text('Don’t have an account? ',style: TextStyle(color:Color(0xFF120D26),fontSize: 15,fontWeight: FontWeight.w900),),
-                    Text('Sign Up',style: TextStyle(color:Color(0xFF5669FF),fontSize: 15,fontWeight: FontWeight.w900),)
+                    InkWell(
+                        onTap:() => {
+                          Navigator.push(context,MaterialPageRoute(builder:(context)=> const SignUP()))
+
+                        },child: Text(' Sign Up',style: TextStyle(color:Color(0xFF5669FF),fontSize: 15,fontWeight: FontWeight.w900),))
                   ],
                 ),
               ),

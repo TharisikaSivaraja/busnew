@@ -1,3 +1,4 @@
+import 'package:busnew_app/module/auth/screen/sign_in.dart';
 import 'package:flutter/material.dart';
 
 import '../../booking/screen/bus_search.dart';
@@ -16,8 +17,12 @@ class _SignUPState extends State<SignUP> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('hello'),
-        centerTitle: ture,
+        leading: Container(
+            height: 50,
+            child: Image(image: AssetImage('assets/image/menu.png'),)),
+        title: Container(
+            height: 50,
+            child: Image(image: AssetImage('assets/image/logo.png'),)),
         elevation: 15.0,
         backgroundColor: Colors.white,
       ),
@@ -25,7 +30,7 @@ class _SignUPState extends State<SignUP> {
           padding: const EdgeInsets.symmetric(horizontal: 45, vertical: 60),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text('Sign in',
+            Text('Sign Up',
                 style: TextStyle(
                     color: Color(0xFF120D26),
                     fontWeight: FontWeight.w500,
@@ -34,7 +39,7 @@ class _SignUPState extends State<SignUP> {
               padding: const EdgeInsets.fromLTRB(0, 30, 0, 20),
               child: TextField(
                 decoration: InputDecoration(
-                    hintText: 'E-mail',
+                    hintText: 'Full Name',
                     hintStyle: TextStyle(
                         color: Color(0xFF747688), fontWeight: FontWeight.w700),
                     border: OutlineInputBorder(
@@ -45,7 +50,7 @@ class _SignUPState extends State<SignUP> {
             ),
             TextField(
               decoration: InputDecoration(
-                  hintText: 'Password',
+                  hintText: 'E-mail',
                   hintStyle: TextStyle(
                       color: Color(0xFF747688), fontWeight: FontWeight.w700),
                   border: OutlineInputBorder(
@@ -53,6 +58,29 @@ class _SignUPState extends State<SignUP> {
                           BorderSide(width: 3, color: Color(0xFFE4DFDF)))),
               style: TextStyle(color: Color(0xFF747688)),
             ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        hintText: 'Password',
+                        hintStyle: TextStyle(
+                            color: Color(0xFF747688), fontWeight: FontWeight.w700),
+                        border: OutlineInputBorder(
+                            borderSide:
+                            BorderSide(width: 3, color: Color(0xFFE4DFDF)))),
+                    style: TextStyle(color: Color(0xFF747688)),
+                  ),
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                      hintText: 'Confirm Password',
+                      hintStyle: TextStyle(
+                          color: Color(0xFF747688), fontWeight: FontWeight.w700),
+                      border: OutlineInputBorder(
+                          borderSide:
+                          BorderSide(width: 3, color: Color(0xFFE4DFDF)))),
+                  style: TextStyle(color: Color(0xFF747688)),
+                ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 8),
               child: Center(
@@ -72,7 +100,7 @@ class _SignUPState extends State<SignUP> {
                 },
                 child: Padding(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 5, horizontal: 60),
+                      const EdgeInsets.symmetric(vertical: 8, horizontal: 120),
                   child: Text(
                     "Sign In",
                     style: TextStyle(color: Colors.white, fontSize: 18),
@@ -91,18 +119,23 @@ class _SignUPState extends State<SignUP> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Don’t have an account? ',
+                          'Already have an account? ',
                           style: TextStyle(
                               color: Color(0xFF120D26),
                               fontSize: 15,
                               fontWeight: FontWeight.w900),
                         ),
-                        Text(
-                          'Sign Up',
-                          style: TextStyle(
-                              color: Color(0xFF5669FF),
-                              fontSize: 15,
-                              fontWeight: FontWeight.w900),
+                        InkWell(
+                          onTap: () => {
+                            Navigator.push(context,MaterialPageRoute(builder:(context)=> const SignIn()))
+                          },
+                          child: Text(
+                            '  Sign In',
+                            style: TextStyle(
+                                color: Color(0xFF5669FF),
+                                fontSize: 15,
+                                fontWeight: FontWeight.w900),
+                          ),
                         )
                       ],
                     )))
