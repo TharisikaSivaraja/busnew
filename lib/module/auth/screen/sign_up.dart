@@ -1,7 +1,6 @@
 import 'package:busnew_app/module/auth/screen/sign_in.dart';
 import 'package:flutter/material.dart';
-
-import '../../booking/screen/bus_search.dart';
+import '../../bus/screen/bus_search.dart';
 
 class SignUP extends StatefulWidget {
   const SignUP({Key? key}) : super(key: key);
