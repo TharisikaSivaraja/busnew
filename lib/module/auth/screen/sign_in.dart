@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../booking/screen/bus_search.dart';
+
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
@@ -66,7 +68,9 @@ class _SignInState extends State<SignIn> {
             ),
             Center(
               child: TextButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(context, BusSearch.route())
+                },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 60),
                   child: Text("Sign In",style: TextStyle(color: Colors.white,fontSize: 18),),
