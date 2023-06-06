@@ -30,8 +30,12 @@ class _MyBookingState extends State<MyBooking> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 20),
-            child: Text('Your Bookings', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color: Color(0xFF120D26))),
+            padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 10),
+            child:
+            Text('Your Bookings',
+                style: TextStyle(fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF120D26))),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 15,horizontal: 25),

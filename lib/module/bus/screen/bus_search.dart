@@ -24,14 +24,15 @@ class _BusSearchState extends State<BusSearch> {
     );
     if (picked != null) {}
   }
+
   @override
   Widget build(BuildContext context) {
-    var itemsData = ['Jaffna','Kandy','Colombo'];
+    var itemsData = ['Jaffna', 'Kandy', 'Colombo'];
 
     List<DropdownMenuItem> items = itemsData.map((item) {
       return DropdownMenuItem<dynamic>(
         value: item,
-        child:Text(item),
+        child: Text(item),
       );
     }).toList();
     return Scaffold(
@@ -53,16 +54,22 @@ class _BusSearchState extends State<BusSearch> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 20),
-              child: Text('Choose source & Destination', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color: Color(0xFF120D26))),
+              child: Text('Choose source & Destination',
+                  style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF120D26))),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 50.0,vertical: 10),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 50.0, vertical: 10),
               child: DropdownButtonFormField<dynamic>(
                 isExpanded: true,
                 decoration: const InputDecoration(
                   filled: true,
                   fillColor: Color(0xFFE7EBEF),
-                  enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFE7EBEF))),
+                  enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFE7EBEF))),
                 ),
                 isDense: true,
                 hint: Text("Source place"),
@@ -70,24 +77,24 @@ class _BusSearchState extends State<BusSearch> {
                 onChanged: (value) => {},
               ),
             ),
-
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.lightBlue,
+                width: 80,
+                height: 80,
+                child: new Image.asset('assets/image/arrow.png'),
               ),
             ),
-
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 50.0,vertical: 10),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 50.0, vertical: 10),
               child: DropdownButtonFormField<dynamic>(
                 isExpanded: true,
                 decoration: const InputDecoration(
                   filled: true,
                   fillColor: Color(0xFFE7EBEF),
-                  enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFE7EBEF))),
+                  enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFE7EBEF))),
                 ),
                 isDense: true,
                 hint: Text("Destination place"),
@@ -96,26 +103,24 @@ class _BusSearchState extends State<BusSearch> {
               ),
             ),
             TextButton(
-              onPressed: () => {
-                multiSelectPicker(context)
-              },
+              onPressed: () => {multiSelectPicker(context)},
               child: Padding(
-                padding:
-                const EdgeInsets.symmetric(vertical: 8, horizontal: 120),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 20,
+                  horizontal: 100,
+                ),
                 child: Text(
                   "Choose from calender",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
-
             Center(
               child: TextButton(
-                onPressed: () => {
-                  Navigator.push(context, BusSearch.route())
-                },
+                onPressed: () => {Navigator.push(context, BusSearch.route())},
                 child: Padding(
                   padding:
-                  const EdgeInsets.symmetric(vertical: 8, horizontal: 80),
+                      const EdgeInsets.symmetric(vertical: 8, horizontal: 80),
                   child: Text(
                     "Search Buses",
                     style: TextStyle(color: Colors.white, fontSize: 18),
@@ -126,25 +131,25 @@ class _BusSearchState extends State<BusSearch> {
                 ),
               ),
             ),
-
-           Padding(
-             padding: const EdgeInsets.all(8.0),
-             child: Center(
-                  child: TextButton(
-                    onPressed: () => {
-                      Navigator.push(context, MyBooking.route())
-                    },
-                    child: Padding(
-                      padding:  const EdgeInsets.symmetric(vertical: 8, horizontal: 80),
-                      child: Text("My Bookings",style: TextStyle(color: Colors.white,fontSize: 18),),
-                    ),
-                    style: TextButton.styleFrom(
-                      backgroundColor: Color(0xFF5669FF),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Center(
+                child: TextButton(
+                  onPressed: () => {Navigator.push(context, MyBooking.route())},
+                  child: Padding(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 8, horizontal: 80),
+                    child: Text(
+                      "My Bookings",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
+                  style: TextButton.styleFrom(
+                    backgroundColor: Color(0xFF5669FF),
+                  ),
                 ),
-           ),
-
+              ),
+            ),
           ],
         ));
   }
