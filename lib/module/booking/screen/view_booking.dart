@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-const TextStyle textStyle = TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.black);
+const TextStyle textStyle =
+    TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.black);
 
 class ViewBooking extends StatefulWidget {
   const ViewBooking({Key? key}) : super(key: key);
@@ -30,17 +31,23 @@ class _ViewBookingState extends State<ViewBooking> {
         backgroundColor: Colors.white,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 10),
-            child: Text('Booking Details', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color: Color(0xFF120D26))),
+            padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
+            child: Text('Booking Details',
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                    color: Color(0xFF120D26))),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
+            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
             child: Card(
               elevation: 8.0,
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 child: Column(
                   children: [
                     SizedBox(height: 20),

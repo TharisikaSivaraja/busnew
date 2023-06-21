@@ -33,7 +33,11 @@ class _MyBookingState extends State<MyBooking> {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 30),
-            child: Text('Your Bookings', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color: Color(0xFF120D26))),
+            child: Text('Your Bookings',
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF120D26))),
           ),
           InkWell(
             onTap: () => {Navigator.push(context, ViewBooking.route())},
@@ -42,7 +46,8 @@ class _MyBookingState extends State<MyBooking> {
               child: Card(
                 elevation: 8.0,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
                   child: Column(
                     children: [
                       Row(
@@ -72,11 +77,13 @@ class _MyBookingState extends State<MyBooking> {
                           Text('28 Dec 2022'),
                           Container(
                             decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.all(Radius.circular(6)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(6)),
                               color: Color(0XFF59DA44),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 4, horizontal: 8),
                               child: Text(
                                 'Upcoming',
                                 style: TextStyle(color: Colors.white),
@@ -99,7 +106,8 @@ class _MyBookingState extends State<MyBooking> {
               child: Card(
                 elevation: 8.0,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
                   child: Column(
                     children: [
                       Row(
@@ -129,11 +137,13 @@ class _MyBookingState extends State<MyBooking> {
                           Text('28 Dec 2022'),
                           Container(
                             decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.all(Radius.circular(6)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(6)),
                               color: Color(0XFFF6E86A),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 4, horizontal: 8),
                               child: Text(
                                 'Completed',
                                 style: TextStyle(color: Color(0xFF3D56F0)),
@@ -156,7 +166,8 @@ class _MyBookingState extends State<MyBooking> {
               child: Card(
                 elevation: 8.0,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
                   child: Column(
                     children: [
                       Row(
@@ -186,11 +197,13 @@ class _MyBookingState extends State<MyBooking> {
                           Text('28 Dec 2022'),
                           Container(
                             decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.all(Radius.circular(6)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(6)),
                               color: Color(0XFF59DA44),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 4, horizontal: 8),
                               child: Text(
                                 'Upcoming',
                                 style: TextStyle(color: Colors.white),
@@ -213,7 +226,8 @@ class _MyBookingState extends State<MyBooking> {
               child: Card(
                 elevation: 8.0,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
                   child: Column(
                     children: [
                       Row(
@@ -243,11 +257,13 @@ class _MyBookingState extends State<MyBooking> {
                           Text('28 Dec 2022'),
                           Container(
                             decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.all(Radius.circular(6)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(6)),
                               color: Color(0XFFE04B4B),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 4, horizontal: 8),
                               child: Text(
                                 'Canceled',
                                 style: TextStyle(color: Colors.white),
@@ -269,21 +285,23 @@ class _MyBookingState extends State<MyBooking> {
       floatingActionButton: Container(
         height: 50,
         width: MediaQuery.of(context).size.width,
-        margin: const EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+        margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             ElevatedButton(
               onPressed: () {},
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 12,horizontal: 30),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 12, horizontal: 30),
                 child: const Text('Download'),
               ),
             ),
             ElevatedButton(
               onPressed: () {},
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 12,horizontal: 30),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 12, horizontal: 30),
                 child: Text('E-Mail Me'),
               ),
             ),

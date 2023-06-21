@@ -34,10 +34,12 @@ class _BusListState extends State<BusList> {
             padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 30),
             child: Text(
               'Buses Found',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color: Color(0xFF120D26)),
+              style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFF120D26)),
             ),
           ),
-
           InkWell(
             // onTap: () => {Navigator.push(context, ViewBooking.route())},
             child: Padding(
@@ -54,11 +56,13 @@ class _BusListState extends State<BusList> {
                         children: [
                           Text(
                             'A/C Sleeper (2+1)',
-                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.w300),
                           ),
                           Text(
                             'Rs 645.00',
-                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.w600),
                           )
                         ],
                       ),
@@ -70,12 +74,14 @@ class _BusListState extends State<BusList> {
                             children: [
                               Text(
                                 'Departure Time',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w300),
                               ),
                               SizedBox(width: 15),
                               Text(
                                 '08.30 PM',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
                           ),
@@ -83,12 +89,14 @@ class _BusListState extends State<BusList> {
                             children: [
                               Text(
                                 'Journey Time',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w300),
                               ),
                               SizedBox(width: 15),
                               Text(
                                 '07.45 PM',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
                           )
@@ -111,7 +119,6 @@ class _BusListState extends State<BusList> {
               ),
             ),
           ),
-
           InkWell(
             // onTap: () => {Navigator.push(context, ViewBooking.route())},
             child: Padding(
@@ -128,11 +135,13 @@ class _BusListState extends State<BusList> {
                         children: [
                           Text(
                             'A/C Sleeper (2+1)',
-                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.w300),
                           ),
                           Text(
                             'Rs 645.00',
-                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.w600),
                           )
                         ],
                       ),
@@ -144,12 +153,14 @@ class _BusListState extends State<BusList> {
                             children: [
                               Text(
                                 'Departure Time',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w300),
                               ),
                               SizedBox(width: 15),
                               Text(
                                 '08.30 PM',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
                           ),
@@ -157,12 +168,14 @@ class _BusListState extends State<BusList> {
                             children: [
                               Text(
                                 'Journey Time',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w300),
                               ),
                               SizedBox(width: 15),
                               Text(
                                 '07.45 PM',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
                           )
@@ -185,7 +198,6 @@ class _BusListState extends State<BusList> {
               ),
             ),
           ),
-
           InkWell(
             // onTap: () => {Navigator.push(context, ViewBooking.route())},
             child: Padding(
@@ -202,11 +214,13 @@ class _BusListState extends State<BusList> {
                         children: [
                           Text(
                             'A/C Sleeper (2+1)',
-                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.w300),
                           ),
                           Text(
                             'Rs 645.00',
-                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.w600),
                           )
                         ],
                       ),
@@ -218,12 +232,14 @@ class _BusListState extends State<BusList> {
                             children: [
                               Text(
                                 'Departure Time',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w300),
                               ),
                               SizedBox(width: 15),
                               Text(
                                 '08.30 PM',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
                           ),
@@ -231,12 +247,14 @@ class _BusListState extends State<BusList> {
                             children: [
                               Text(
                                 'Journey Time',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w300),
                               ),
                               SizedBox(width: 15),
                               Text(
                                 '07.45 PM',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
                           )
@@ -259,7 +277,6 @@ class _BusListState extends State<BusList> {
               ),
             ),
           ),
-
         ],
       ),
     );
