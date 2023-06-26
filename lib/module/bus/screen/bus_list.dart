@@ -134,12 +134,12 @@ class _BusListState extends State<BusList> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'A/C Sleeper (2+1)',
+                            'A/C Sleeper (2+2)',
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.w300),
                           ),
                           Text(
-                            'Rs 645.00',
+                            'Rs 1500.00',
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.w600),
                           )
@@ -218,7 +218,7 @@ class _BusListState extends State<BusList> {
                                 fontSize: 20, fontWeight: FontWeight.w300),
                           ),
                           Text(
-                            'Rs 645.00',
+                            'Rs 700.00',
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.w600),
                           )
