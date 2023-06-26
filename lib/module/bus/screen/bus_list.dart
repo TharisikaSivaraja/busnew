@@ -1,3 +1,4 @@
+import 'package:busnew_app/module/bus/screen/bus_seat.dart';
 import 'package:flutter/material.dart';
 
 class BusList extends StatefulWidget {
@@ -41,7 +42,7 @@ class _BusListState extends State<BusList> {
             ),
           ),
           InkWell(
-            // onTap: () => {Navigator.push(context, ViewBooking.route())},
+            onTap: () => {Navigator.push(context, BusSeat.route())},
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
               child: Card(
@@ -120,7 +121,7 @@ class _BusListState extends State<BusList> {
             ),
           ),
           InkWell(
-            // onTap: () => {Navigator.push(context, ViewBooking.route())},
+            onTap: () => {Navigator.push(context, BusSeat.route())},
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
               child: Card(
@@ -199,7 +200,7 @@ class _BusListState extends State<BusList> {
             ),
           ),
           InkWell(
-            // onTap: () => {Navigator.push(context, ViewBooking.route())},
+            onTap: () => {Navigator.push(context, BusSeat.route())},
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
               child: Card(

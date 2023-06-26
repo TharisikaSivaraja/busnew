@@ -77,7 +77,7 @@ class _SignInState extends State<SignIn> {
                   Navigator.push(context, BusSearch.route())
                 },
                 child: Padding(
-                  padding:  const EdgeInsets.symmetric(vertical: 8, horizontal: 120),
+                  padding:  const EdgeInsets.symmetric(vertical: 8, horizontal: 100),
                   child: Text("Sign In",style: TextStyle(color: Colors.white,fontSize: 18),),
                 ),
                 style: TextButton.styleFrom(

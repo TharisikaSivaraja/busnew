@@ -81,7 +81,7 @@ class _SignUPState extends State<SignUP> {
                   style: TextStyle(color: Color(0xFF747688)),
                 ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 8),
+              padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 8),
               child: Center(
                 child: Text(
                   "Forgot Password?",
@@ -99,7 +99,7 @@ class _SignUPState extends State<SignUP> {
                 },
                 child: Padding(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 8, horizontal: 120),
+                      const EdgeInsets.symmetric(vertical: 8, horizontal: 100),
                   child: Text(
                     "Sign In",
                     style: TextStyle(color: Colors.white, fontSize: 18),
